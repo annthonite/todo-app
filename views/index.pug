@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1=title
+  p #{title} using Node.js, Express, Typescript and MongoDB
+  br
+  br
+
+  div(class='container')
+    div(class='row')
+      div(class='col-sm')
+        input(type='text', class='form-control', placeholder='To Do', id='todo')
+      div(class='col-sm')
+        button(type='button' class='btn btn-primary' id='add_btn') Add
+
+  br
+  br
+
+  div(class='container')
+    table(class='table' id='table_todo')
+      thead()
+        tr()
+          th() Todo
+          th() Action
+      tbody(id='table_todo_body')
+        
+          
+
+block scripts
+  script(src='/javascripts/index.js')

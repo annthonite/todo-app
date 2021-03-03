@@ -1,0 +1,33 @@
+{
+  "name": "todo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc",
+    "watch-tsc": "tsc -w",
+    "serve": "node dist/app.js && npm run build-sass",
+    "start": "npm run serve",
+    "watch-node": "nodemon dist/app.js",
+    "node-debug": "nodemon --inspect dist/app.js",
+    "build-sass": "node-sass public/stylesheets/main.scss dist/public/stylesheets/main.css",
+    "watch-sass": "node-sass --watch public/stylesheets/main.scss dist/public/stylesheets/main.css"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "@types/jquery": "^3.5.1",
+    "@types/mongoose": "^5.7.36",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.17.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^5.9.29",
+    "morgan": "~1.9.1",
+    "pug": "^3.0.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
